@@ -339,7 +339,7 @@ public class RecyclerViewHeader extends RelativeLayout {
                 linear = (LinearLayoutManager) manager;
                 grid = null;
                 staggeredGrid = null;
-            } else if (managerClass == GridLayoutManager.class) {
+            } else if (managerClass instanceof GridLayoutManager) {
                 linear = null;
                 grid = (GridLayoutManager) manager;
                 staggeredGrid = null;
